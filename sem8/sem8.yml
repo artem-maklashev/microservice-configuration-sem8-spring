@@ -1,3 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, loggers
+
+info:
+  app:
+    name: "Seminar 11"
+    version: "1.0.0"
+    description: "Это приложение работает с заметками"
+
 spring:
   application:
     name: sem8
@@ -17,13 +29,3 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 8081
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,metrics
-info:
-  app:
-    name: "Seminar 11"
-    version: "1.0.0"
-    description: "Это приложение работает с заметками"
