@@ -1,6 +1,8 @@
 spring:
   application:
     name: sem8
+    version: 1.0.0
+    description: "Это приложение работает с заметками"
   datasource:
     url: jdbc:h2:mem:userTable
     driver-class-name: org.h2.Driver
